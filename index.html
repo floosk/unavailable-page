@@ -20,7 +20,7 @@
 
     body {
         margin: 0;
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -32,7 +32,8 @@
         gap: 2vh;
         user-select: none;
         width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: auto;
         box-sizing: border-box;
     }
 
@@ -85,7 +86,7 @@
     }
 
     .github-btn {
-      margin-top: 10px;
+      margin-top: 5px;
       max-width: 400px;
     }
 
