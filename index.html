@@ -19,22 +19,23 @@
     }
 
     body {
-        margin: 0;
-        height: 100vh;
+        min-height: 100%;
+        min-height: 100dvh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        background: #000;
         color: #fff;
         font-family: 'Inter', system-ui, -apple-system, sans-serif;
         padding: 40px 20px;
-        gap: 2vh;
+        gap: 20px;
         user-select: none;
-        width: 100%;
-        overflow-x: hidden;
-        overflow-y: auto;
-        box-sizing: border-box;
+        justify-content: flex-start;
+    }
+    
+    body::before,
+    body::after {
+        content: "";
+        flex-grow: 1;
     }
 
     .container {
@@ -111,7 +112,7 @@
 </head>
 
 <body>
-
+  
     <h1>floosk.</h1>
   
     <a class="btn github-btn" href="https://github.com/floosk" target="_blank" rel="noopener noreferrer">
